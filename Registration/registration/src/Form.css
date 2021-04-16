@@ -1,0 +1,14 @@
+.form-container {
+  margin-top: 4rem;
+  background-color: #afa5a5;
+  border-radius: 2%;
+}
+
+.form-field {
+  margin-top: 1rem !important;
+  max-width: 65%;
+}
+
+.form-button {
+  margin: 1rem 0rem !important;
+}
