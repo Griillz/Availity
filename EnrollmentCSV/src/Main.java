@@ -4,7 +4,10 @@ import java.util.*;
 public class Main {
 
     public static void main(String args[]){
-        List<String> csvString = CSVtoString("src/companies.csv");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the file path of the file you would like to test.\n");
+        String filepath = scanner.next();
+        List<String> csvString = CSVtoString(filepath);
         List<Enrollee> enrollees = parseCSVString(csvString);
         HashMap<String, List<Enrollee>> companies = generateCompanies(enrollees);
         HashMap<String, List<Enrollee>> finalCompanies = filterDuplicateUsers(companies);
